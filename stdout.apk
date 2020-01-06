@@ -1,0 +1,838 @@
+[  +29 ms] executing: [E:\softwares\programming\flutter\] git log -n 1 --pretty=format:%H
+[ +170 ms] Exit code 0 from: git log -n 1 --pretty=format:%H
+[   +1 ms] cc949a8e8b9cf394b9290a8e80f87af3e207dce5
+[        ] executing: [E:\softwares\programming\flutter\] git describe --match v*.*.* --first-parent --long --tags
+[  +75 ms] Exit code 0 from: git describe --match v*.*.* --first-parent --long --tags
+[        ] v1.9.1+hotfix.4-0-gcc949a8e8
+[  +11 ms] executing: [E:\softwares\programming\flutter\] git rev-parse --abbrev-ref --symbolic @{u}
+[  +66 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[        ] origin/stable
+[        ] executing: [E:\softwares\programming\flutter\] git ls-remote --get-url origin
+[ +136 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] https://github.com/flutter/flutter.git
+[ +301 ms] executing: [E:\softwares\programming\flutter\] git rev-parse --abbrev-ref HEAD
+[  +78 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] stable
+[  +80 ms] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +6 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[ +218 ms] You are building a fat APK that includes binaries for android-arm, android-arm64.
+[        ] If you are deploying the app to the Play Store, it's recommended to use app bundles or split the APK to reduce the APK size.
+[        ]     To generate an app bundle, run:
+[        ]         flutter build appbundle --target-platform android-arm,android-arm64
+[        ]         Learn more on: https://developer.android.com/guide/app-bundle
+[        ]     To split the APKs per ABI, run:
+[        ]         flutter build apk --target-platform android-arm,android-arm64 --split-per-abi
+[        ]         Learn more on:  https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
+[  +14 ms] Initializing gradle...
+[   +1 ms] Using gradle from C:\Users\Nebiyu\Desktop\New folder\family_tree\android\gradlew.bat.
+[ +386 ms] executing: C:\Users\Nebiyu\Desktop\New folder\family_tree\android\gradlew.bat -v
+[+2841 ms] 
+           ------------------------------------------------------------
+           Gradle 4.10.2
+           ------------------------------------------------------------
+
+           Build time:   2018-09-19 18:10:15 UTC
+           Revision:     b4d8d5d170bb4ba516e88d7fe5647e2323d791dd
+
+           Kotlin DSL:   1.0-rc-6
+           Kotlin:       1.2.61
+           Groovy:       2.4.15
+           Ant:          Apache Ant(TM) version 1.9.11 compiled on March 23 2018
+           JVM:          1.8.0_202-release (JetBrains s.r.o 25.202-b03)
+           OS:           Windows 10 10.0 amd64
+[  +10 ms] Initializing gradle... (completed in 3.2s)
+[  +24 ms] Resolving dependencies...
+[        ] executing: [C:\Users\Nebiyu\Desktop\New folder\family_tree\android\] C:\Users\Nebiyu\Desktop\New folder\family_tree\android\gradlew.bat app:properties
+[+2515 ms] 
+           > Task :app:properties
+
+           ------------------------------------------------------------
+           Project :app
+           ------------------------------------------------------------
+
+           INTERNAL__CHECKED_MINIMUM_PLUGIN_VERSIONS: true
+           allprojects: [project ':app']
+           android: com.android.build.gradle.internal.dsl.BaseAppModuleExtension_Decorated@248cfb39
+           androidDependencies: task ':app:androidDependencies'
+           ant: org.gradle.api.internal.project.DefaultAntBuilder@30d14d54
+           antBuilderFactory: org.gradle.api.internal.project.DefaultAntBuilderFactory@76b9c9c5
+           archivesBaseName: app
+           artifacts: org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@56932d14
+           asDynamicObject: DynamicObject for project ':app'
+           assemble: task ':app:assemble'
+           assembleAndroidTest: task ':app:assembleAndroidTest'
+           assembleDebug: task ':app:assembleDebug'
+           assembleDebugAndroidTest: task ':app:assembleDebugAndroidTest'
+           assembleDebugUnitTest: task ':app:assembleDebugUnitTest'
+           assembleProfile: task ':app:assembleProfile'
+           assembleProfileUnitTest: task ':app:assembleProfileUnitTest'
+           assembleRelease: task ':app:assembleRelease'
+           assembleReleaseUnitTest: task ':app:assembleReleaseUnitTest'
+           baseClassLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@150541cc
+           buildDebugPreBundle: task ':app:buildDebugPreBundle'
+           buildDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app
+           buildFile: C:\Users\Nebiyu\Desktop\New folder\family_tree\android\app\build.gradle
+           buildOutputs: BaseVariantOutput container
+           buildPath: :
+           buildProfilePreBundle: task ':app:buildProfilePreBundle'
+           buildReleasePreBundle: task ':app:buildReleasePreBundle'
+           buildScriptSource: org.gradle.groovy.scripts.TextResourceScriptSource@2f8405d5
+           buildscript: org.gradle.api.internal.initialization.DefaultScriptHandler@174b0601
+           bundle: task ':app:bundle'
+           bundleDebug: task ':app:bundleDebug'
+           bundleDebugAndroidTestResources: task ':app:bundleDebugAndroidTestResources'
+           bundleDebugResources: task ':app:bundleDebugResources'
+           bundleProfile: task ':app:bundleProfile'
+           bundleProfileResources: task ':app:bundleProfileResources'
+           bundleRelease: task ':app:bundleRelease'
+           bundleReleaseResources: task ':app:bundleReleaseResources'
+           check: task ':app:check'
+           checkDebugAndroidTestClasspath: task ':app:checkDebugAndroidTestClasspath'
+           checkDebugClasspath: task ':app:checkDebugClasspath'
+           checkDebugLibraries: task ':app:checkDebugLibraries'
+           checkDebugManifest: task ':app:checkDebugManifest'
+           checkProfileClasspath: task ':app:checkProfileClasspath'
+           checkProfileLibraries: task ':app:checkProfileLibraries'
+           checkProfileManifest: task ':app:checkProfileManifest'
+           checkReleaseClasspath: task ':app:checkReleaseClasspath'
+           checkReleaseLibraries: task ':app:checkReleaseLibraries'
+           checkReleaseManifest: task ':app:checkReleaseManifest'
+           childProjects: {}
+           class: class org.gradle.api.internal.project.DefaultProject_Decorated
+           classLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@587f6271
+           cleanBuildCache: task ':app:cleanBuildCache'
+           compileDebugAidl: task ':app:compileDebugAidl'
+           compileDebugAndroidTestAidl: task ':app:compileDebugAndroidTestAidl'
+           compileDebugAndroidTestJavaWithJavac: task ':app:compileDebugAndroidTestJavaWithJavac'
+           compileDebugAndroidTestKotlin: task ':app:compileDebugAndroidTestKotlin'
+           compileDebugAndroidTestNdk: task ':app:compileDebugAndroidTestNdk'
+           compileDebugAndroidTestRenderscript: task ':app:compileDebugAndroidTestRenderscript'
+           compileDebugAndroidTestShaders: task ':app:compileDebugAndroidTestShaders'
+           compileDebugAndroidTestSources: task ':app:compileDebugAndroidTestSources'
+           compileDebugJavaWithJavac: task ':app:compileDebugJavaWithJavac'
+           compileDebugKotlin: task ':app:compileDebugKotlin'
+           compileDebugNdk: task ':app:compileDebugNdk'
+           compileDebugRenderscript: task ':app:compileDebugRenderscript'
+           compileDebugShaders: task ':app:compileDebugShaders'
+           compileDebugSources: task ':app:compileDebugSources'
+           compileDebugUnitTestJavaWithJavac: task ':app:compileDebugUnitTestJavaWithJavac'
+           compileDebugUnitTestKotlin: task ':app:compileDebugUnitTestKotlin'
+           compileDebugUnitTestSources: task ':app:compileDebugUnitTestSources'
+           compileFlutterBuildDebugArm: task ':app:compileFlutterBuildDebugArm'
+           compileFlutterBuildDebugArm64: task ':app:compileFlutterBuildDebugArm64'
+           compileFlutterBuildProfileArm: task ':app:compileFlutterBuildProfileArm'
+           compileFlutterBuildProfileArm64: task ':app:compileFlutterBuildProfileArm64'
+           compileFlutterBuildReleaseArm: task ':app:compileFlutterBuildReleaseArm'
+           compileFlutterBuildReleaseArm64: task ':app:compileFlutterBuildReleaseArm64'
+           compileLint: task ':app:compileLint'
+           compileProfileAidl: task ':app:compileProfileAidl'
+           compileProfileJavaWithJavac: task ':app:compileProfileJavaWithJavac'
+           compileProfileKotlin: task ':app:compileProfileKotlin'
+           compileProfileNdk: task ':app:compileProfileNdk'
+           compileProfileRenderscript: task ':app:compileProfileRenderscript'
+           compileProfileShaders: task ':app:compileProfileShaders'
+           compileProfileSources: task ':app:compileProfileSources'
+           compileProfileUnitTestJavaWithJavac: task ':app:compileProfileUnitTestJavaWithJavac'
+           compileProfileUnitTestKotlin: task ':app:compileProfileUnitTestKotlin'
+           compileProfileUnitTestSources: task ':app:compileProfileUnitTestSources'
+           compileReleaseAidl: task ':app:compileReleaseAidl'
+           compileReleaseJavaWithJavac: task ':app:compileReleaseJavaWithJavac'
+           compileReleaseKotlin: task ':app:compileReleaseKotlin'
+           compileReleaseNdk: task ':app:compileReleaseNdk'
+           compileReleaseRenderscript: task ':app:compileReleaseRenderscript'
+           compileReleaseShaders: task ':app:compileReleaseShaders'
+           compileReleaseSources: task ':app:compileReleaseSources'
+           compileReleaseUnitTestJavaWithJavac: task ':app:compileReleaseUnitTestJavaWithJavac'
+           compileReleaseUnitTestKotlin: task ':app:compileReleaseUnitTestKotlin'
+           compileReleaseUnitTestSources: task ':app:compileReleaseUnitTestSources'
+           components: SoftwareComponentInternal set
+           configurationActions: org.gradle.configuration.project.DefaultProjectConfigurationActionContainer@67cb4393
+           configurationTargetIdentifier: org.gradle.configuration.ConfigurationTargetIdentifier$1@68ee5812
+           configurations: configuration container
+           connectedAndroidTest: task ':app:connectedAndroidTest'
+           connectedCheck: task ':app:connectedCheck'
+           connectedDebugAndroidTest: task ':app:connectedDebugAndroidTest'
+           consumeConfigAttr: task ':app:consumeConfigAttr'
+           convention: org.gradle.api.internal.plugins.DefaultConvention@275a2000
+           copyFlutterAssetsDebug: task ':app:copyFlutterAssetsDebug'
+           copyFlutterAssetsProfile: task ':app:copyFlutterAssetsProfile'
+           copyFlutterAssetsRelease: task ':app:copyFlutterAssetsRelease'
+           createDebugCompatibleScreenManifests: task ':app:createDebugCompatibleScreenManifests'
+           createMockableJar: task ':app:createMockableJar'
+           createProfileCompatibleScreenManifests: task ':app:createProfileCompatibleScreenManifests'
+           createReleaseCompatibleScreenManifests: task ':app:createReleaseCompatibleScreenManifests'
+           defaultArtifacts: org.gradle.api.internal.plugins.DefaultArtifactPublicationSet_Decorated@495b270
+           defaultTasks: []
+           deferredProjectConfiguration: org.gradle.api.internal.project.DeferredProjectConfiguration@39ffbeaa
+           dependencies: org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler_Decorated@23cb4f4f
+           dependencyLocking: org.gradle.internal.locking.DefaultDependencyLockingHandler_Decorated@55e72116
+           depth: 1
+           description: null
+           deviceAndroidTest: task ':app:deviceAndroidTest'
+           deviceCheck: task ':app:deviceCheck'
+           displayName: project ':app'
+           distsDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\distributions
+           distsDirName: distributions
+           docsDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\docs
+           docsDirName: docs
+           ext: org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension@7c480fe8
+           extensions: org.gradle.api.internal.plugins.DefaultConvention@275a2000
+           extractApksForDebug: task ':app:extractApksForDebug'
+           extractApksForProfile: task ':app:extractApksForProfile'
+           extractApksForRelease: task ':app:extractApksForRelease'
+           extractProguardFiles: task ':app:extractProguardFiles'
+           fileOperations: org.gradle.api.internal.file.DefaultFileOperations@3806e425
+           fileResolver: org.gradle.api.internal.file.BaseDirFileResolver@414e655d
+           flutter: FlutterExtension_Decorated@2d4d03f3
+           generateDebugAndroidTestAssets: task ':app:generateDebugAndroidTestAssets'
+           generateDebugAndroidTestBuildConfig: task ':app:generateDebugAndroidTestBuildConfig'
+           generateDebugAndroidTestResValues: task ':app:generateDebugAndroidTestResValues'
+           generateDebugAndroidTestResources: task ':app:generateDebugAndroidTestResources'
+           generateDebugAndroidTestSources: task ':app:generateDebugAndroidTestSources'
+           generateDebugAssets: task ':app:generateDebugAssets'
+           generateDebugBuildConfig: task ':app:generateDebugBuildConfig'
+           generateDebugFeatureMetadata: task ':app:generateDebugFeatureMetadata'
+           generateDebugFeatureTransitiveDeps: task ':app:generateDebugFeatureTransitiveDeps'
+           generateDebugResValues: task ':app:generateDebugResValues'
+           generateDebugResources: task ':app:generateDebugResources'
+           generateDebugSources: task ':app:generateDebugSources'
+           generateDebugUnitTestAssets: task ':app:generateDebugUnitTestAssets'
+           generateDebugUnitTestResources: task ':app:generateDebugUnitTestResources'
+           generateDebugUnitTestSources: task ':app:generateDebugUnitTestSources'
+           generateProfileAssets: task ':app:generateProfileAssets'
+           generateProfileBuildConfig: task ':app:generateProfileBuildConfig'
+           generateProfileFeatureMetadata: task ':app:generateProfileFeatureMetadata'
+           generateProfileFeatureTransitiveDeps: task ':app:generateProfileFeatureTransitiveDeps'
+           generateProfileResValues: task ':app:generateProfileResValues'
+           generateProfileResources: task ':app:generateProfileResources'
+           generateProfileSources: task ':app:generateProfileSources'
+           generateProfileUnitTestAssets: task ':app:generateProfileUnitTestAssets'
+           generateProfileUnitTestResources: task ':app:generateProfileUnitTestResources'
+           generateProfileUnitTestSources: task ':app:generateProfileUnitTestSources'
+           generateReleaseAssets: task ':app:generateReleaseAssets'
+           generateReleaseBuildConfig: task ':app:generateReleaseBuildConfig'
+           generateReleaseFeatureMetadata: task ':app:generateReleaseFeatureMetadata'
+           generateReleaseFeatureTransitiveDeps: task ':app:generateReleaseFeatureTransitiveDeps'
+           generateReleaseResValues: task ':app:generateReleaseResValues'
+           generateReleaseResources: task ':app:generateReleaseResources'
+           generateReleaseSources: task ':app:generateReleaseSources'
+           generateReleaseUnitTestAssets: task ':app:generateReleaseUnitTestAssets'
+           generateReleaseUnitTestResources: task ':app:generateReleaseUnitTestResources'
+           generateReleaseUnitTestSources: task ':app:generateReleaseUnitTestSources'
+           gradle: build 'android'
+           group: android
+           identityPath: :app
+           inheritedScope: org.gradle.api.internal.ExtensibleDynamicObject$InheritedDynamicObject@11467efd
+           installDebug: task ':app:installDebug'
+           installDebugAndroidTest: task ':app:installDebugAndroidTest'
+           installProfile: task ':app:installProfile'
+           installRelease: task ':app:installRelease'
+           java: org.gradle.api.plugins.internal.DefaultJavaPluginExtension_Decorated@1e6e973c
+           javaPreCompileDebug: task ':app:javaPreCompileDebug'
+           javaPreCompileDebugAndroidTest: task ':app:javaPreCompileDebugAndroidTest'
+           javaPreCompileDebugUnitTest: task ':app:javaPreCompileDebugUnitTest'
+           javaPreCompileProfile: task ':app:javaPreCompileProfile'
+           javaPreCompileProfileUnitTest: task ':app:javaPreCompileProfileUnitTest'
+           javaPreCompileRelease: task ':app:javaPreCompileRelease'
+           javaPreCompileReleaseUnitTest: task ':app:javaPreCompileReleaseUnitTest'
+           kotlin: org.jetbrains.kotlin.gradle.dsl.KotlinProjectExtension_Decorated@2cb87d21
+           kotlin_version: 1.2.71
+           layout: org.gradle.api.internal.file.DefaultProjectLayout@69afa1de
+           libsDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\libs
+           libsDirName: libs
+           lint: task ':app:lint'
+           lintDebug: task ':app:lintDebug'
+           lintFix: task ':app:lintFix'
+           lintProfile: task ':app:lintProfile'
+           lintRelease: task ':app:lintRelease'
+           lintVitalRelease: task ':app:lintVitalRelease'
+           listenerBuildOperationDecorator: org.gradle.configuration.internal.DefaultListenerBuildOperationDecorator@4b3c9b80
+           logger: org.gradle.internal.logging.slf4j.OutputEventListenerBackedLogger@2c0ed24e
+           logging: org.gradle.internal.logging.services.DefaultLoggingManager@218122ac
+           mainApkListPersistenceDebug: task ':app:mainApkListPersistenceDebug'
+           mainApkListPersistenceDebugAndroidTest: task ':app:mainApkListPersistenceDebugAndroidTest'
+           mainApkListPersistenceProfile: task ':app:mainApkListPersistenceProfile'
+           mainApkListPersistenceRelease: task ':app:mainApkListPersistenceRelease'
+           makeApkFromBundleForDebug: task ':app:makeApkFromBundleForDebug'
+           makeApkFromBundleForProfile: task ':app:makeApkFromBundleForProfile'
+           makeApkFromBundleForRelease: task ':app:makeApkFromBundleForRelease'
+           mergeDebugAndroidTestAssets: task ':app:mergeDebugAndroidTestAssets'
+           mergeDebugAndroidTestJniLibFolders: task ':app:mergeDebugAndroidTestJniLibFolders'
+           mergeDebugAndroidTestResources: task ':app:mergeDebugAndroidTestResources'
+           mergeDebugAndroidTestShaders: task ':app:mergeDebugAndroidTestShaders'
+           mergeDebugAssets: task ':app:mergeDebugAssets'
+           mergeDebugJniLibFolders: task ':app:mergeDebugJniLibFolders'
+           mergeDebugResources: task ':app:mergeDebugResources'
+           mergeDebugShaders: task ':app:mergeDebugShaders'
+           mergeProfileAssets: task ':app:mergeProfileAssets'
+           mergeProfileJniLibFolders: task ':app:mergeProfileJniLibFolders'
+           mergeProfileResources: task ':app:mergeProfileResources'
+           mergeProfileShaders: task ':app:mergeProfileShaders'
+           mergeReleaseAssets: task ':app:mergeReleaseAssets'
+           mergeReleaseJniLibFolders: task ':app:mergeReleaseJniLibFolders'
+           mergeReleaseResources: task ':app:mergeReleaseResources'
+           mergeReleaseShaders: task ':app:mergeReleaseShaders'
+           modelRegistry: org.gradle.model.internal.registry.DefaultModelRegistry@4ebf12c8
+           modelSchemaStore: org.gradle.model.internal.manage.schema.extract.DefaultModelSchemaStore@547f1cb2
+           module: org.gradle.api.internal.artifacts.ProjectBackedModule@26f7cfaf
+           name: app
+           normalization: org.gradle.normalization.internal.DefaultInputNormalizationHandler_Decorated@5a8afb90
+           objects: org.gradle.api.internal.model.DefaultObjectFactory@75458bda
+           org.gradle.jvmargs: -Xmx1536M
+           packLibsflutterBuildDebug: task ':app:packLibsflutterBuildDebug'
+           packLibsflutterBuildProfile: task ':app:packLibsflutterBuildProfile'
+           packLibsflutterBuildRelease: task ':app:packLibsflutterBuildRelease'
+           packageAppClassesDebug: task ':app:packageAppClassesDebug'
+           packageAppClassesDebugAndroidTest: task ':app:packageAppClassesDebugAndroidTest'
+           packageAppClassesDebugUnitTest: task ':app:packageAppClassesDebugUnitTest'
+           packageAppClassesProfile: task ':app:packageAppClassesProfile'
+           packageAppClassesProfileUnitTest: task ':app:packageAppClassesProfileUnitTest'
+           packageAppClassesRelease: task ':app:packageAppClassesRelease'
+           packageAppClassesReleaseUnitTest: task ':app:packageAppClassesReleaseUnitTest'
+           packageDebug: task ':app:packageDebug'
+           packageDebugAndroidTest: task ':app:packageDebugAndroidTest'
+           packageDebugBundle: task ':app:packageDebugBundle'
+           packageDebugUniversalApk: task ':app:packageDebugUniversalApk'
+           packageProfile: task ':app:packageProfile'
+           packageProfileBundle: task ':app:packageProfileBundle'
+           packageProfileUniversalApk: task ':app:packageProfileUniversalApk'
+           packageRelease: task ':app:packageRelease'
+           packageReleaseBundle: task ':app:packageReleaseBundle'
+           packageReleaseUniversalApk: task ':app:packageReleaseUniversalApk'
+           parent: root project 'android'
+           parentIdentifier: root project 'android'
+           path: :app
+           pluginManager: org.gradle.api.internal.plugins.DefaultPluginManager_Decorated@5d79539c
+           plugins: [org.gradle.api.plugins.HelpTasksPlugin@6b6633a9, com.android.build.gradle.api.AndroidBasePlugin@663d032e, org.gradle.language.base.plugins.LifecycleBasePlugin@3f7f5f68, org.gradle.api.plugins.BasePlugin@288d1ea8, org.gradle.api.plugins.ReportingBasePlugin@72ac8b6b, org.gradle.api.plugins.JavaBasePlugin@7c86d263, com.android.build.gradle.AppPlugin@39474684, org.jetbrains.kotlin.gradle.plugin.KotlinAndroidPluginWrapper@79ff675a, FlutterPlugin@6f1e5cdd]
+           preBuild: task ':app:preBuild'
+           preDebugAndroidTestBuild: task ':app:preDebugAndroidTestBuild'
+           preDebugBuild: task ':app:preDebugBuild'
+           preDebugUnitTestBuild: task ':app:preDebugUnitTestBuild'
+           preProfileBuild: task ':app:preProfileBuild'
+           preProfileUnitTestBuild: task ':app:preProfileUnitTestBuild'
+           preReleaseBuild: task ':app:preReleaseBuild'
+           preReleaseUnitTestBuild: task ':app:preReleaseUnitTestBuild'
+           prepareLintJar: task ':app:prepareLintJar'
+           processDebugAndroidTestJavaRes: task ':app:processDebugAndroidTestJavaRes'
+           processDebugAndroidTestManifest: task ':app:processDebugAndroidTestManifest'
+           processDebugAndroidTestResources: task ':app:processDebugAndroidTestResources'
+           processDebugJavaRes: task ':app:processDebugJavaRes'
+           processDebugManifest: task ':app:processDebugManifest'
+           processDebugResources: task ':app:processDebugResources'
+           processDebugUnitTestJavaRes: task ':app:processDebugUnitTestJavaRes'
+           processOperations: org.gradle.api.internal.file.DefaultFileOperations@3806e425
+           processProfileJavaRes: task ':app:processProfileJavaRes'
+           processProfileManifest: task ':app:processProfileManifest'
+           processProfileResources: task ':app:processProfileResources'
+           processProfileUnitTestJavaRes: task ':app:processProfileUnitTestJavaRes'
+           processReleaseJavaRes: task ':app:processReleaseJavaRes'
+           processReleaseManifest: task ':app:processReleaseManifest'
+           processReleaseResources: task ':app:processReleaseResources'
+           processReleaseUnitTestJavaRes: task ':app:processReleaseUnitTestJavaRes'
+           project: project ':app'
+           projectConfigurator: org.gradle.api.internal.project.BuildOperationCrossProjectConfigurator@25419e97
+           projectDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\android\app
+           projectEvaluationBroadcaster: ProjectEvaluationListener broadcast
+           projectEvaluator: org.gradle.configuration.project.LifecycleProjectEvaluator@26319fdd
+           projectPath: :app
+           projectRegistry: org.gradle.api.internal.project.DefaultProjectRegistry@24f6f9f6
+           properties: {...}
+           providers: org.gradle.api.internal.provider.DefaultProviderFactory@492c19f0
+           reportBuildArtifactsDebug: task ':app:reportBuildArtifactsDebug'
+           reportBuildArtifactsProfile: task ':app:reportBuildArtifactsProfile'
+           reportBuildArtifactsRelease: task ':app:reportBuildArtifactsRelease'
+           reportSourceSetTransformAndroidTest: task ':app:reportSourceSetTransformAndroidTest'
+           reportSourceSetTransformAndroidTestDebug: task ':app:reportSourceSetTransformAndroidTestDebug'
+           reportSourceSetTransformDebug: task ':app:reportSourceSetTransformDebug'
+           reportSourceSetTransformMain: task ':app:reportSourceSetTransformMain'
+           reportSourceSetTransformProfile: task ':app:reportSourceSetTransformProfile'
+           reportSourceSetTransformRelease: task ':app:reportSourceSetTransformRelease'
+           reportSourceSetTransformTest: task ':app:reportSourceSetTransformTest'
+           reportSourceSetTransformTestDebug: task ':app:reportSourceSetTransformTestDebug'
+           reportSourceSetTransformTestProfile: task ':app:reportSourceSetTransformTestProfile'
+           reportSourceSetTransformTestRelease: task ':app:reportSourceSetTransformTestRelease'
+           reporting: org.gradle.api.reporting.ReportingExtension_Decorated@3913a101
+           reportsDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\reports
+           repositories: repository container
+           resolveConfigAttr: task ':app:resolveConfigAttr'
+           resourceLoader: org.gradle.internal.resource.transfer.DefaultUriTextResourceLoader@100f2592
+           resources: org.gradle.api.internal.resources.DefaultResourceHandler@3aea9f39
+           rootDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\android
+           rootProject: root project 'android'
+           script: false
+           scriptHandlerFactory: org.gradle.api.internal.initialization.DefaultScriptHandlerFactory@29c0e8db
+           scriptPluginFactory: org.gradle.configuration.ScriptPluginFactorySelector@dff5f4b
+           serviceRegistryFactory: org.gradle.internal.service.scopes.ProjectScopeServices$4@64b5c8d3
+           services: ProjectScopeServices
+           signingReport: task ':app:signingReport'
+           sourceCompatibility: 1.8
+           sourceSets: SourceSet container
+           splitsDiscoveryTaskDebug: task ':app:splitsDiscoveryTaskDebug'
+           splitsDiscoveryTaskProfile: task ':app:splitsDiscoveryTaskProfile'
+           splitsDiscoveryTaskRelease: task ':app:splitsDiscoveryTaskRelease'
+           standardOutputCapture: org.gradle.internal.logging.services.DefaultLoggingManager@218122ac
+           state: project state 'EXECUTED'
+           status: integration
+           subprojects: []
+           targetCompatibility: 1.8
+           tasks: task set
+           test: task ':app:test'
+           testDebugUnitTest: task ':app:testDebugUnitTest'
+           testProfileUnitTest: task ':app:testProfileUnitTest'
+           testReleaseUnitTest: task ':app:testReleaseUnitTest'
+           testReportDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\reports\tests
+           testReportDirName: tests
+           testResultsDir: C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\test-results
+           testResultsDirName: test-results
+           transformClassesWithDexBuilderForDebug: task ':app:transformClassesWithDexBuilderForDebug'
+           transformClassesWithDexBuilderForDebugAndroidTest: task ':app:transformClassesWithDexBuilderForDebugAndroidTest'
+           transformClassesWithDexBuilderForProfile: task ':app:transformClassesWithDexBuilderForProfile'
+           transformClassesWithDexBuilderForRelease: task ':app:transformClassesWithDexBuilderForRelease'
+           transformDexArchiveWithDexMergerForDebug: task ':app:transformDexArchiveWithDexMergerForDebug'
+           transformDexArchiveWithDexMergerForDebugAndroidTest: task ':app:transformDexArchiveWithDexMergerForDebugAndroidTest'
+           transformDexArchiveWithDexMergerForProfile: task ':app:transformDexArchiveWithDexMergerForProfile'
+           transformDexArchiveWithDexMergerForRelease: task ':app:transformDexArchiveWithDexMergerForRelease'
+           transformDexArchiveWithExternalLibsDexMergerForDebug: task ':app:transformDexArchiveWithExternalLibsDexMergerForDebug'
+           transformDexArchiveWithExternalLibsDexMergerForDebugAndroidTest: task ':app:transformDexArchiveWithExternalLibsDexMergerForDebugAndroidTest'
+           transformDexArchiveWithExternalLibsDexMergerForProfile: task ':app:transformDexArchiveWithExternalLibsDexMergerForProfile'
+           transformDexArchiveWithExternalLibsDexMergerForRelease: task ':app:transformDexArchiveWithExternalLibsDexMergerForRelease'
+           transformNativeLibsWithMergeJniLibsForDebug: task ':app:transformNativeLibsWithMergeJniLibsForDebug'
+           transformNativeLibsWithMergeJniLibsForDebugAndroidTest: task ':app:transformNativeLibsWithMergeJniLibsForDebugAndroidTest'
+           transformNativeLibsWithMergeJniLibsForProfile: task ':app:transformNativeLibsWithMergeJniLibsForProfile'
+           transformNativeLibsWithMergeJniLibsForRelease: task ':app:transformNativeLibsWithMergeJniLibsForRelease'
+           transformResourcesWithMergeJavaResForDebug: task ':app:transformResourcesWithMergeJavaResForDebug'
+           transformResourcesWithMergeJavaResForDebugAndroidTest: task ':app:transformResourcesWithMergeJavaResForDebugAndroidTest'
+           transformResourcesWithMergeJavaResForDebugUnitTest: task ':app:transformResourcesWithMergeJavaResForDebugUnitTest'
+           transformResourcesWithMergeJavaResForProfile: task ':app:transformResourcesWithMergeJavaResForProfile'
+           transformResourcesWithMergeJavaResForProfileUnitTest: task ':app:transformResourcesWithMergeJavaResForProfileUnitTest'
+           transformResourcesWithMergeJavaResForRelease: task ':app:transformResourcesWithMergeJavaResForRelease'
+           transformResourcesWithMergeJavaResForReleaseUnitTest: task ':app:transformResourcesWithMergeJavaResForReleaseUnitTest'
+           uninstallAll: task ':app:uninstallAll'
+           uninstallDebug: task ':app:uninstallDebug'
+           uninstallDebugAndroidTest: task ':app:uninstallDebugAndroidTest'
+           uninstallProfile: task ':app:uninstallProfile'
+           uninstallRelease: task ':app:uninstallRelease'
+           validateSigningDebug: task ':app:validateSigningDebug'
+           validateSigningDebugAndroidTest: task ':app:validateSigningDebugAndroidTest'
+           validateSigningProfile: task ':app:validateSigningProfile'
+           validateSigningRelease: task ':app:validateSigningRelease'
+           version: unspecified
+           writeDebugApplicationId: task ':app:writeDebugApplicationId'
+           writeProfileApplicationId: task ':app:writeProfileApplicationId'
+           writeReleaseApplicationId: task ':app:writeReleaseApplicationId'
+           1 actionable task: 1 executed
+[   +9 ms] executing: [C:\Users\Nebiyu\Desktop\New folder\family_tree\android\] C:\Users\Nebiyu\Desktop\New folder\family_tree\android\gradlew.bat app:tasks --all --console=auto
+[+2486 ms] 
+           > Task :app:tasks
+
+           ------------------------------------------------------------
+           All tasks runnable from project :app
+           ------------------------------------------------------------
+
+           Android tasks
+           -------------
+           androidDependencies - Displays the Android dependencies of the project.
+           signingReport - Displays the signing info for each variant.
+           sourceSets - Prints out all the source sets defined in this project.
+
+           Build tasks
+           -----------
+           assemble - Assembles all variants of all applications and secondary packages.
+           assembleAndroidTest - Assembles all the Test applications.
+           assembleDebug - Assembles all Debug builds.
+           assembleProfile - Assembles all Profile builds.
+           assembleRelease - Assembles all Release builds.
+           build - Assembles and tests this project.
+           buildDependents - Assembles and tests this project and all projects that depend on it.
+           buildNeeded - Assembles and tests this project and all projects it depends on.
+           bundleDebug - Creates all Debug bundles.
+           bundleProfile - Creates all Profile bundles.
+           bundleRelease - Creates all Release bundles.
+           clean - Deletes the build directory.
+           cleanBuildCache - Deletes the build cache directory.
+           compileDebugAndroidTestSources
+           compileDebugSources
+           compileDebugUnitTestSources
+           compileProfileSources
+           compileProfileUnitTestSources
+           compileReleaseSources
+           compileReleaseUnitTestSources
+
+           Cleanup tasks
+           -------------
+           lintFix - Runs lint on all variants and applies any safe suggestions to the source code.
+
+           Help tasks
+           ----------
+           buildEnvironment - Displays all buildscript dependencies declared in project ':app'.
+           components - Displays the components produced by project ':app'. [incubating]
+           dependencies - Displays all dependencies declared in project ':app'.
+           dependencyInsight - Displays the insight into a specific dependency in project ':app'.
+           dependentComponents - Displays the dependent components of components in project ':app'. [incubating]
+           help - Displays a help message.
+           model - Displays the configuration model of project ':app'. [incubating]
+           projects - Displays the sub-projects of project ':app'.
+           properties - Displays the properties of project ':app'.
+           tasks - Displays the tasks runnable from project ':app'.
+
+           Install tasks
+           -------------
+           installDebug - Installs the Debug build.
+           installDebugAndroidTest - Installs the android (on device) tests for the Debug build.
+           installProfile - Installs the Profile build.
+           installRelease - Installs the Release build.
+           uninstallAll - Uninstall all applications.
+           uninstallDebug - Uninstalls the Debug build.
+           uninstallDebugAndroidTest - Uninstalls the android (on device) tests for the Debug build.
+           uninstallProfile - Uninstalls the Profile build.
+           uninstallRelease - Uninstalls the Release build.
+
+           Verification tasks
+           ------------------
+           check - Runs all checks.
+           connectedAndroidTest - Installs and runs instrumentation tests for all flavors on connected devices.
+           connectedCheck - Runs all device checks on currently connected devices.
+           connectedDebugAndroidTest - Installs and runs the tests for debug on connected devices.
+           deviceAndroidTest - Installs and runs instrumentation tests using all Device Providers.
+           deviceCheck - Runs all device checks using Device Providers and Test Servers.
+           lint - Runs lint on all variants.
+           lintDebug - Runs lint on the Debug build.
+           lintProfile - Runs lint on the Profile build.
+           lintRelease - Runs lint on the Release build.
+           lintVitalRelease - Runs lint on just the fatal issues in the release build.
+           test - Run unit tests for all variants.
+           testDebugUnitTest - Run unit tests for the debug build.
+           testProfileUnitTest - Run unit tests for the profile build.
+           testReleaseUnitTest - Run unit tests for the release build.
+
+           Other tasks
+           -----------
+           assembleDebugAndroidTest
+           assembleDebugUnitTest
+           assembleProfileUnitTest
+           assembleReleaseUnitTest
+           buildDebugPreBundle
+           buildProfilePreBundle
+           buildReleasePreBundle
+           bundle
+           bundleDebugAndroidTestResources
+           bundleDebugResources
+           bundleProfileResources
+           bundleReleaseResources
+           checkDebugAndroidTestClasspath
+           checkDebugClasspath
+           checkDebugLibraries
+           checkDebugManifest
+           checkProfileClasspath
+           checkProfileLibraries
+           checkProfileManifest
+           checkReleaseClasspath
+           checkReleaseLibraries
+           checkReleaseManifest
+           compileDebugAidl
+           compileDebugAndroidTestAidl
+           compileDebugAndroidTestJavaWithJavac
+           compileDebugAndroidTestKotlin - Compiles the debugAndroidTest kotlin.
+           compileDebugAndroidTestNdk
+           compileDebugAndroidTestRenderscript
+           compileDebugAndroidTestShaders
+           compileDebugJavaWithJavac
+           compileDebugKotlin - Compiles the debug kotlin.
+           compileDebugNdk
+           compileDebugRenderscript
+           compileDebugShaders
+           compileDebugUnitTestJavaWithJavac
+           compileDebugUnitTestKotlin - Compiles the debugUnitTest kotlin.
+           compileFlutterBuildDebugArm
+           compileFlutterBuildDebugArm64
+           compileFlutterBuildProfileArm
+           compileFlutterBuildProfileArm64
+           compileFlutterBuildReleaseArm
+           compileFlutterBuildReleaseArm64
+           compileLint
+           compileProfileAidl
+           compileProfileJavaWithJavac
+           compileProfileKotlin - Compiles the profile kotlin.
+           compileProfileNdk
+           compileProfileRenderscript
+           compileProfileShaders
+           compileProfileUnitTestJavaWithJavac
+           compileProfileUnitTestKotlin - Compiles the profileUnitTest kotlin.
+           compileReleaseAidl
+           compileReleaseJavaWithJavac
+           compileReleaseKotlin - Compiles the release kotlin.
+           compileReleaseNdk
+           compileReleaseRenderscript
+           compileReleaseShaders
+           compileReleaseUnitTestJavaWithJavac
+           compileReleaseUnitTestKotlin - Compiles the releaseUnitTest kotlin.
+           consumeConfigAttr
+           copyFlutterAssetsDebug
+           copyFlutterAssetsProfile
+           copyFlutterAssetsRelease
+           createDebugCompatibleScreenManifests
+           createMockableJar
+           createProfileCompatibleScreenManifests
+           createReleaseCompatibleScreenManifests
+           extractApksForDebug
+           extractApksForProfile
+           extractApksForRelease
+           extractProguardFiles
+           generateDebugAndroidTestAssets
+           generateDebugAndroidTestBuildConfig
+           generateDebugAndroidTestResources
+           generateDebugAndroidTestResValues
+           generateDebugAndroidTestSources
+           generateDebugAssets
+           generateDebugBuildConfig
+           generateDebugFeatureMetadata
+           generateDebugFeatureTransitiveDeps
+           generateDebugResources
+           generateDebugResValues
+           generateDebugSources
+           generateDebugUnitTestAssets
+           generateDebugUnitTestResources
+           generateDebugUnitTestSources
+           generateProfileAssets
+           generateProfileBuildConfig
+           generateProfileFeatureMetadata
+           generateProfileFeatureTransitiveDeps
+           generateProfileResources
+           generateProfileResValues
+           generateProfileSources
+           generateProfileUnitTestAssets
+           generateProfileUnitTestResources
+           generateProfileUnitTestSources
+           generateReleaseAssets
+           generateReleaseBuildConfig
+           generateReleaseFeatureMetadata
+           generateReleaseFeatureTransitiveDeps
+           generateReleaseResources
+           generateReleaseResValues
+           generateReleaseSources
+           generateReleaseUnitTestAssets
+           generateReleaseUnitTestResources
+           generateReleaseUnitTestSources
+           javaPreCompileDebug
+           javaPreCompileDebugAndroidTest
+           javaPreCompileDebugUnitTest
+           javaPreCompileProfile
+           javaPreCompileProfileUnitTest
+           javaPreCompileRelease
+           javaPreCompileReleaseUnitTest
+           mainApkListPersistenceDebug
+           mainApkListPersistenceDebugAndroidTest
+           mainApkListPersistenceProfile
+           mainApkListPersistenceRelease
+           makeApkFromBundleForDebug
+           makeApkFromBundleForProfile
+           makeApkFromBundleForRelease
+           mergeDebugAndroidTestAssets
+           mergeDebugAndroidTestJniLibFolders
+           mergeDebugAndroidTestResources
+           mergeDebugAndroidTestShaders
+           mergeDebugAssets
+           mergeDebugJniLibFolders
+           mergeDebugResources
+           mergeDebugShaders
+           mergeProfileAssets
+           mergeProfileJniLibFolders
+           mergeProfileResources
+           mergeProfileShaders
+           mergeReleaseAssets
+           mergeReleaseJniLibFolders
+           mergeReleaseResources
+           mergeReleaseShaders
+           packageAppClassesDebug
+           packageAppClassesDebugAndroidTest
+           packageAppClassesDebugUnitTest
+           packageAppClassesProfile
+           packageAppClassesProfileUnitTest
+           packageAppClassesRelease
+           packageAppClassesReleaseUnitTest
+           packageDebug
+           packageDebugAndroidTest
+           packageDebugBundle
+           packageDebugUniversalApk
+           packageProfile
+           packageProfileBundle
+           packageProfileUniversalApk
+           packageRelease
+           packageReleaseBundle
+           packageReleaseUniversalApk
+           packLibsflutterBuildDebug
+           packLibsflutterBuildProfile
+           packLibsflutterBuildRelease
+           preBuild
+           preDebugAndroidTestBuild
+           preDebugBuild
+           preDebugUnitTestBuild
+           prepareLintJar
+           preProfileBuild
+           preProfileUnitTestBuild
+           preReleaseBuild
+           preReleaseUnitTestBuild
+           processDebugAndroidTestJavaRes
+           processDebugAndroidTestManifest
+           processDebugAndroidTestResources
+           processDebugJavaRes
+           processDebugManifest
+           processDebugResources
+           processDebugUnitTestJavaRes
+           processProfileJavaRes
+           processProfileManifest
+           processProfileResources
+           processProfileUnitTestJavaRes
+           processReleaseJavaRes
+           processReleaseManifest
+           processReleaseResources
+           processReleaseUnitTestJavaRes
+           reportBuildArtifactsDebug
+           reportBuildArtifactsProfile
+           reportBuildArtifactsRelease
+           reportSourceSetTransformAndroidTest
+           reportSourceSetTransformAndroidTestDebug
+           reportSourceSetTransformDebug
+           reportSourceSetTransformMain
+           reportSourceSetTransformProfile
+           reportSourceSetTransformRelease
+           reportSourceSetTransformTest
+           reportSourceSetTransformTestDebug
+           reportSourceSetTransformTestProfile
+           reportSourceSetTransformTestRelease
+           resolveConfigAttr
+           splitsDiscoveryTaskDebug
+           splitsDiscoveryTaskProfile
+           splitsDiscoveryTaskRelease
+           transformClassesWithDexBuilderForDebug
+           transformClassesWithDexBuilderForDebugAndroidTest
+           transformClassesWithDexBuilderForProfile
+           transformClassesWithDexBuilderForRelease
+           transformDexArchiveWithDexMergerForDebug
+           transformDexArchiveWithDexMergerForDebugAndroidTest
+           transformDexArchiveWithDexMergerForProfile
+           transformDexArchiveWithDexMergerForRelease
+           transformDexArchiveWithExternalLibsDexMergerForDebug
+           transformDexArchiveWithExternalLibsDexMergerForDebugAndroidTest
+           transformDexArchiveWithExternalLibsDexMergerForProfile
+           transformDexArchiveWithExternalLibsDexMergerForRelease
+           transformNativeLibsWithMergeJniLibsForDebug
+           transformNativeLibsWithMergeJniLibsForDebugAndroidTest
+           transformNativeLibsWithMergeJniLibsForProfile
+           transformNativeLibsWithMergeJniLibsForRelease
+           transformResourcesWithMergeJavaResForDebug
+           transformResourcesWithMergeJavaResForDebugAndroidTest
+           transformResourcesWithMergeJavaResForDebugUnitTest
+           transformResourcesWithMergeJavaResForProfile
+           transformResourcesWithMergeJavaResForProfileUnitTest
+           transformResourcesWithMergeJavaResForRelease
+           transformResourcesWithMergeJavaResForReleaseUnitTest
+           validateSigningDebug
+           validateSigningDebugAndroidTest
+           validateSigningProfile
+           validateSigningRelease
+           writeDebugApplicationId
+           writeProfileApplicationId
+           writeReleaseApplicationId
+
+           Rules
+           -----
+           Pattern: clean<TaskName>: Cleans the output files of a task.
+           Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+           Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+           1 actionable task: 1 executed
+[   +6 ms] Resolving dependencies... (completed in 5.0s)
+[   +1 ms] Running Gradle task 'assembleRelease'...
+[   +3 ms] executing: [C:\Users\Nebiyu\Desktop\New folder\family_tree\android\] C:\Users\Nebiyu\Desktop\New folder\family_tree\android\gradlew.bat -Pverbose=true -Ptarget=lib\main.dart -Ptrack-widget-creation=false -Ptarget-platform=android-arm,android-arm64 assembleRelease
+[+32017 ms] > Task :app:compileFlutterBuildReleaseArm
+[+12993 ms] [  +88 ms] executing: [E:\softwares\programming\flutter\] git log -n 1 --pretty=format:%H
+[ +497 ms] [ +895 ms] Exit code 0 from: git log -n 1 --pretty=format:%H
+[        ] [   +3 ms] cc949a8e8b9cf394b9290a8e80f87af3e207dce5
+[        ] [        ] executing: [E:\softwares\programming\flutter\] git describe --match v*.*.* --first-parent --long --tags
+[ +501 ms] [ +404 ms] Exit code 0 from: git describe --match v*.*.* --first-parent --long --tags
+[   +1 ms] [        ] v1.9.1+hotfix.4-0-gcc949a8e8
+[   +1 ms] [  +18 ms] executing: [E:\softwares\programming\flutter\] git rev-parse --abbrev-ref --symbolic @{u}
+[ +185 ms] [ +285 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[   +1 ms] [        ] origin/stable
+[   +1 ms] [        ] executing: [E:\softwares\programming\flutter\] git ls-remote --get-url origin
+[ +307 ms] [ +261 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] [        ] https://github.com/flutter/flutter.git
+[ +395 ms] [ +422 ms] executing: [E:\softwares\programming\flutter\] git rev-parse --abbrev-ref HEAD
+[ +203 ms] [ +149 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] [        ] stable
+[        ] [  +26 ms] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [   +4 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[+1089 ms] [+1061 ms] Building bundle
+[        ] [   +1 ms] Writing asset files to C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\intermediates\flutter\release\android-arm/flutter_assets
+[+1298 ms] [+1356 ms] Wrote C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\intermediates\flutter\release\android-arm/flutter_assets
+[ +109 ms] [  +25 ms] "flutter bundle" took 2,613ms.
+[+30088 ms] > Task :app:compileFlutterBuildReleaseArm64
+[+7104 ms] [  +28 ms] executing: [E:\softwares\programming\flutter\] git log -n 1 --pretty=format:%H
+[ +204 ms] [ +288 ms] Exit code 0 from: git log -n 1 --pretty=format:%H
+[        ] [   +2 ms] cc949a8e8b9cf394b9290a8e80f87af3e207dce5
+[        ] [        ] executing: [E:\softwares\programming\flutter\] git describe --match v*.*.* --first-parent --long --tags
+[ +202 ms] [ +112 ms] Exit code 0 from: git describe --match v*.*.* --first-parent --long --tags
+[        ] [        ] v1.9.1+hotfix.4-0-gcc949a8e8
+[        ] [  +15 ms] executing: [E:\softwares\programming\flutter\] git rev-parse --abbrev-ref --symbolic @{u}
+[  +92 ms] [ +107 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{u}
+[   +1 ms] [        ] origin/stable
+[        ] [        ] executing: [E:\softwares\programming\flutter\] git ls-remote --get-url origin
+[  +92 ms] [ +100 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] [        ] https://github.com/flutter/flutter.git
+[ +201 ms] [ +172 ms] executing: [E:\softwares\programming\flutter\] git rev-parse --abbrev-ref HEAD
+[ +109 ms] [ +149 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] [        ] stable
+[        ] [  +27 ms] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [   +4 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [   +1 ms] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[ +595 ms] [ +553 ms] Building bundle
+[        ] [        ] Writing asset files to C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\intermediates\flutter\release\android-arm64/flutter_assets
+[ +386 ms] [ +355 ms] Wrote C:\Users\Nebiyu\Desktop\New folder\family_tree\build\app\intermediates\flutter\release\android-arm64/flutter_assets
+[        ] [  +30 ms] "flutter bundle" took 1,110ms.
+[ +317 ms] > Task :app:packLibsflutterBuildRelease UP-TO-DATE
+[ +294 ms] > Task :app:checkReleaseClasspath UP-TO-DATE
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] > Task :app:preReleaseBuild UP-TO-DATE
+[  +97 ms] > Task :app:compileReleaseAidl NO-SOURCE
+[        ] > Task :app:compileReleaseRenderscript UP-TO-DATE
+[        ] > Task :app:checkReleaseManifest UP-TO-DATE
+[ +202 ms] > Task :app:generateReleaseBuildConfig UP-TO-DATE
+[  +93 ms] > Task :app:cleanMergeReleaseAssets
+[        ] > Task :app:mergeReleaseShaders UP-TO-DATE
+[        ] > Task :app:compileReleaseShaders UP-TO-DATE
+[        ] > Task :app:generateReleaseAssets UP-TO-DATE
+[        ] > Task :app:mergeReleaseAssets
+[ +391 ms] > Task :app:copyFlutterAssetsRelease
+[        ] > Task :app:mainApkListPersistenceRelease UP-TO-DATE
+[        ] > Task :app:generateReleaseResValues UP-TO-DATE
+[        ] > Task :app:generateReleaseResources UP-TO-DATE
+[ +311 ms] > Task :app:mergeReleaseResources UP-TO-DATE
+[        ] > Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+[        ] > Task :app:processReleaseManifest UP-TO-DATE
+[        ] > Task :app:splitsDiscoveryTaskRelease UP-TO-DATE
+[        ] > Task :app:processReleaseResources UP-TO-DATE
+[ +186 ms] > Task :app:compileReleaseKotlin UP-TO-DATE
+[        ] > Task :app:prepareLintJar UP-TO-DATE
+[        ] > Task :app:generateReleaseSources UP-TO-DATE
+[        ] > Task :app:javaPreCompileRelease UP-TO-DATE
+[ +107 ms] > Task :app:compileReleaseJavaWithJavac UP-TO-DATE
+[        ] > Task :app:compileReleaseNdk NO-SOURCE
+[        ] > Task :app:compileReleaseSources UP-TO-DATE
+[+12398 ms] > Task :app:lintVitalRelease FAILED
+[        ] 25 actionable tasks: 6 executed, 19 up-to-date
+[+1509 ms] Running Gradle task 'assembleRelease'... (completed in 104.7s)
+[   +2 ms] "flutter apk" took 113,435ms.
